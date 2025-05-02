@@ -2,12 +2,362 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--for Responsive -->
+    <meta name="description" content="Privides a concise description of the page content" >
+    <meta name="author" content="this web site may by Md Shoyaib">
     <title>html practice</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        table{
+            border: 1px solid gray;
+            border-collapse: collapse;
+        }
+        th,td,tr{
+            border: 1px solid gray;
+            padding: 5px 10px;
+        }
+    </style>
+
 </head>
 <body>
+    <h1 id="head">HTML PRACTICE </h1>
+    <h1>HTML - Hyper Text Markup Langauge</h1>
+    <h2>HTML 2.0 (1995),</h2>
+    <h2>HTML 3.2 (1997)</h2>
+    <h2>HTML 4.0 (1997-1999)</h2>
+    <h2>HTML 5 (2014)</h2>
+
+<!-- *<h1>h1 for HTML Heading (Opening Tag -> Content -> Closing Tag = HTML Element)</h1> -->
+<!-- *paragraph element (p tag is a block-level element) -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias,eum?</p>
+
+    <p>Lorem consectetur adipisicing elit. <br> Officiis, iure aspernatur voluptatem delectus odit error.</p>
+
+    <hr> 
+    <!-- ! <br> (for line break)  -->
+
+    <!-- Comment Tag -->
+     <p>Lorem ipsum, ((<strong>dolar sit</strong>)) dolor ((<em>consecteture</em> )). Quisquam, tempora soluta.</p>
+
+     <u class="strikethrough">Lorem ipsum dolor sit amet.</u>
+
+     <p>Lorem ipsum dolor sit, (<del>amet</del>) consectetur (<s>strikethrough</s> ). Accusantium, veritatis.</p>
+
+     <p>log <sup>2</sup></p>
+     <p>log<sub>2</sub></p>
+
+     <pre>hello 
+        how are you
+        Lorem ipsum dolor sit amet.
+     </pre>
+
+     <p>Lorem ipsum dolor sit amet  <kbd>Ctrl + s.</kbd> adipisicing provident.</p>
+     <p><abbr title="world wide web">WWW</abbr> World Wide Web</p>
+
+     <p>Lamet consectetur adipisicing <mark>consectetur adipisicing</mark>elit. Soluta, expedita!</p>
+
+     <p>Lorem ipsum dolor sit amet <small>consectetur, adipisicing elit</small> .</p>
+
+     <p style="color: red; font-size: 18px; text-align: center;">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+<!-- ?  Anchor Tag -- *The tag <a> defines a hyperlink, which is used to link from one page to another. -->
+<!--  ?<a href="https://site.com">url name</a>  ((href -> Hypertext Reference )) -->
+
+    <a href="https://youtube.com" target="_blank" title="Open Youtube" rel="this is youtube page" download="">YouTube</a>
+
+    <a href="https://file-examples.com/index.php/sample-documents-download/sample-pdf-download/" download>download</a><br>
+
+    <a href="mailto:shoyaibsb999@gmail.com">send mail</a><br>
+    <a href="tel:+9682309046">call us</a><br>
+
+    <p>&copy; - &amp; &lt; 	&gt; 	&cent;  	&euro;  	&reg;  	&trade; &nbsp; </p>
+
+<!-- * image tag  -->
+
+     <img src="image/3d-img1.jpg" loading="lazy" alt="image- one" width="400px"/>
+        
+<!-- *width 100% or max-width: 400px is best for responsiv -->
+
+    <a href="https://burger102.com/" target="_blank">
+        <img src="image/3d-img2.jpg" alt="burger shop" width="100">
+    </a>
+
+<!-- *  HTML Empty Elemetns  -->
+
+     <area> <br> <col> <embed> <hr> <img> <input> <link> <meta> <source> <param>
     
-    
+        <figure>
+            <img src="image/3d-img1.jpg" width="400" alt="">
+            <figcaption>Html course</figcaption>
+
+        </figure>
+
+        <ol>
+            <li>item one</li>
+            <li>item two</li>
+            <li>item three</li>
+        </ol>
+        <ul>  <!-- disc, circle, square, nonoe > -->
+            <li>ul item One</li>
+            <li>ul item two</li>
+            <li>ul item three</li>
+        </ul>
+
+<!-- * TABLE  -->
+
+     <!-- <table>
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Id</th>
+                <th>Password</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>sba</td>
+                <td>123</td>
+                <td>52368</td>
+            </tr>
+            <tr>
+                <td>thapa</td>
+                <td>463</td>
+                <td>515268</td>
+            </tr>
+            <tr>
+                <td>jane</td>
+                <td>112</td>
+                <td>523632568</td>
+            </tr>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align: center;">count: 3</td>
+                </tr>
+            </tfoot>
+        </tbody>
+     </table> -->
+
+     <table>
+        <thead>
+            <tr>
+                <th colspan="7">TimeTable</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="5">Hours</td>
+                <td>Sat</td>
+                <td>Sun</td>
+                <td>Mon</td>
+                <td>twe</td>
+                <td>wen</td>
+                <td>tue</td>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>HTML</td>
+                <td>HTML</td>
+                <td>HTML</td>
+                <td>HTML</td>
+                <td>HTML</td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: center;">Lunch</td>
+            </tr>
+            <tr>
+                <td>sat</td>
+                <td>sun</td>
+                <td>mon</td>
+                <td>twe</td>
+                <td>wen</td>
+                <td rowspan="2">Game</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>CSS</td>
+                <td>CSS</td>
+                <td>CSS</td>
+                <td>CSS</td>
+            </tr>
+        </tbody>
+     </table>
+
+<!-- * iFrame Tag  -->
+
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/HHY3aRhLhJQ?si=G72pFX3255ZTm6MP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+     <iframe src="https://burger102.com/" frameborder="0" width="400" height="500"></iframe>
+
+    <br>
+<!-- * Audio Tag  -->
+
+      <audio src="audio/whip-afro-dancehall-music-110235.mp3" type="audio/mpeg" controls></audio><br><br>
+
+      <audio controls> <!-- autoplay, muted -->
+        <source src="audio/whip-afro-dancehall-music-110235.mp3" type="audio/mpeg"/>
+        <source src="audio/whip-afro-dancehall-music-110235.mp3" type="audio/wav"/>
+      </audio><br><br>
+
+<!--* video tag-- autoplay,  muted,  loop, poster  type= "video/mp4 or webm "-->
+
+      <video src="video/8165907-uhd_2160_3840_25fps.mp4" poster="./image/3d-img1.jpg" type="video/mp4" width="400" height="400" controls></video>
+
+<!-- * Form Tag  type=attribute -->
+
+      <form>
+        <div>
+            <label for="username">User Name : </label>
+            <input type="text" id="username">
+        </div><br>
+        <div>
+            <label for="email">Email : </label>
+            <input type="email" id="email">
+        </div><br>
+        <label for="number">Number : </label>
+        <input type="number" id="number" min="2" max="5"><br>
+
+        <div><br>
+            <label for="gender">Gender : </label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+        </div>
+
+        <div><br>
+            <label for="">Favorite Hobbies : </label>
+            <input type="checkbox"> Music
+            <input type="checkbox"> Singing
+            <input type="checkbox"> Danch
+            <input type="checkbox"> Song
+        </div>
+
+        <div><br>
+            <label for="">Fav Country : </label>
+            <select name="country" id="country">
+                <option value="ban">Bangladesh</option>
+                <option value="in">India</option>
+                <option value="nep">Nepal</option>
+                <option value="om">Oman</option>
+                <option value="us">USA</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="countrys">Select a Country : </label>
+            <input type="text" id="countrys" list="countries">
+            <datalist id="countries">
+                <option value="ban">Bangladesh</option>
+                <option value="bang">Bangladesh</option>
+                <option value="ban">Bangladesh</option>
+                <option value="ban">Bangladesh</option>
+            </datalist>
+        </div>
+
+        <br>
+        <input type="submit" value="Submit">
+        <button type="submit">Submit</button>
+        <br>
+        
+        <div>
+            <label for="file">Select your File : </label>
+            <input type="file" name="fileupload" id="file">
+        </div>
+    </form>
+
+<!-- *all kind form attribute -->
+    <form>
+        <input
+            type="text"
+            placeholder="Your Text" 
+            name="name" 
+            id="name"  
+            autocomplete="off" 
+            size="10" 
+            value="Shoyaib" 
+            readonly 
+            disabled
+            required
+         />
+    </form>
+
+    <input type="range" value="40" min="0" max="100" name="volume">
+    <br>
+    <div>
+        <label for="">BirthDate</label>
+        <input type="date" name="" id="">
+    </div><br>
+    <div>
+        <label for="time">Time</label>
+        <input type="time" id="time">
+    </div>
+    <div>
+        <label for="color">Chose Color : </label>
+        <input type="color">
+    </div>
+    <div>
+        <label for="">URL :</label>
+        <input type="url">
+    </div>
+    <div>
+        <label for="">Search : </label>
+        <input type="search" placeholder="search.....">
+    </div>
+    <div>
+        <label for="">Month</label>
+        <input type="month">
+    </div>
+    <div>
+        <label for="">vacation Week : </label>
+        <input type="week">
+    </div>
+
+    <form>
+        <fieldset>
+            <legend>Personal Info</legend>
+            Name : <input type="text" name="" id="" placeholder="Write Your name"> <br><br>
+        Email : <input type="email" name="email" placeholder="Enter Your Email"><br><br>
+        Message : <textarea name="" id=""></textarea><br>
+
+        <input type="submit" value="Submit">
+        </fieldset> 
+    </form>
+
+<!-- * Html Semantic Elements -->
+
+    <header> 
+        <nav>
+
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero section">
+                <h1>I am Mr Shoyaib Front End Web Developer</h1>
+                <button>Contact</button>
+        </section>
+    </main>
+
+
+    <section>
+        <article>
+            <aside>
+
+            </aside>
+        </article>
+    </section>
+
+    <footer>
+
+    </footer>
+
+
+<br><br>
+    <!-- * <p>Ctrl+b (file and Folder show and hide)</p> -->
+
+    <!-- ?Extensions -->
+    <!-- *<p>Live Server</p> -->
+    <!-- *<p>Auto Close Tag</p> -->
+    <!-- *<p>Auto Rename Tag</p> -->
+    <!-- *<p>Better Comments</p> -->
 </body>
 </html>
